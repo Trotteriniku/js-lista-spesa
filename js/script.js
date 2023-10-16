@@ -10,3 +10,9 @@ if (productProm !== 'stop') {
 }
     console.log(productlist);
 } 
+
+
+for (let i = 0; i < productlist.length; i++) {
+    const element = productlist[i];
+    
+}
