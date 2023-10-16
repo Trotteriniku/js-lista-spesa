@@ -1,17 +1,12 @@
-let productProm = prompt ('Ciao cosa vorresti comprare ??')
-console.log(productProm);
+let productProm;
 let productlist = [];
-let flag = false
+let flag = false;
 let i = 0;
-while (i < 0 && !flag) {
+while (productProm !== 'stop') {
+productProm = prompt ('Ciao cosa vorresti comprare ??');
 
-   productProm = prompt ('Ciao cosa vorresti comprare ??') 
-
-   if (productProm === 'stop') {
-        flag === true
-   }
-    
+if (productProm !== 'stop') {
+    productlist.push(productProm); 
+}
+    console.log(productlist);
 } 
-
-productlist.push(productProm);
-console.log(productlist);
